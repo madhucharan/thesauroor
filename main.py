@@ -38,8 +38,8 @@ st.caption("_Your Grandiloquent Guide Through the Gordian Knots of Technology_",
 
 def main():
     # initialising session state for chat history
-    if "chat_history" not in st.session_state:
-        st.session_state.chat_history = []
+    # if "chat_history" not in st.session_state:
+    #     st.session_state.chat_history = []
 
     if "messages" not in st.session_state:
         st.session_state.messages = [
