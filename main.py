@@ -15,7 +15,7 @@ def init_client():
         )
 
     except Exception as e:
-        st.error(f"Failed to initialize OpenAI client: {str(e)}")
+        st.error(f"Failed to initialize client: {str(e)}")
         st.error("Please make sure your GEMINI_API_KEY is set in your .env file")
         return None
 
