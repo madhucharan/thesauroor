@@ -10,7 +10,7 @@ load_dotenv()
 def init_client():
     try:
         return OpenAI(
-            api_key=os.getenv("GEMINI_API_KEY"),
+            api_key= os.getenv("GEMINI_API_KEY") or st.secrets["GEMINI_API_KEY"],
             base_url="https://generativelanguage.googleapis.com/v1beta/openai/"
         )
 
@@ -102,7 +102,7 @@ def main():
                                 model="gemini-2.0-flash",
                                 messages=st.session_state.messages,
                                 stream=True,
-                                max_tokens=500,
+                                max_tokens=600,
                             )
 
                             response = st.write_stream(stream)
