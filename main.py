@@ -32,7 +32,7 @@ st.logo(
         "tharoor.png",
         size="large"
     )
-st.title("Thesauroor", anchor=False)
+st.title("Thesauroor", anchor=False, help="Thesaurus + Tharoor + Tech")
 st.caption("_Your Grandiloquent Guide Through the Gordian Knots of Technology_", help="i have no idea what it means")
 
 
