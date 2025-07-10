@@ -1,7 +1,6 @@
 # Thesauroor
 
-A simple Streamlit-based chat app built to explore and understand various
-prompting techniques.
+A simple Streamlit-based chat app built to test different prompting techniques. 
 
 ## Prerequisites
 
